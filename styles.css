@@ -10,6 +10,7 @@
     --color7: #D5F178;
     --color8: #FFD6D6;
     --color9: #282220;
+    --color11: #EBCBBE;
 }
 
 *{
@@ -25,6 +26,7 @@ a{
 body{
     font-family: "Work Sans", sans-serif;
     overflow-x: hidden;
+    background-color: var(--color1);
 }
 
 .container{
@@ -641,11 +643,66 @@ body{
 .hover-effect-seller:hover{
     box-shadow: 8px 8px 0px -2px var(--color9);
 }
-
-
 /* SECTION BEST SELLER END*/
 
+/* SECTION SLIDE TEXT START */
+.section__slider-text{
+    margin-top: 90px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color5);
+}
 
+.container__scroller[data-animated="true"] .scroller__inner{
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+}
+
+.container__scroller .scroller__inner:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/* .container__scroller::before,
+.container__scroller::after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+} */
+
+/* .container__scroller::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255,255, 0), var(--color1));
+}
+
+.container__scroller::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255,255, 0), var(--color1));
+} */
+
+.scroller__inner{
+    padding-block: 3.3em;
+    display: flex;
+    align-items: center;
+    gap: 6em;
+}
+
+
+@keyframes scroll {
+    to{
+        transform: translate(calc(-50% - 3em));
+        -webkit-transform: translate(calc(-50% - 3em));
+        -moz-transform: translate(calc(-50% - 3em));
+        -ms-transform: translate(calc(-50% - 3em));
+        -o-transform: translate(calc(-50% - 3em));
+}
+}
+
+/* SECTION SLIDE TEXT END */
 
 @media screen and (max-width: 961px) {
   .navbar__lists, .navbar__ctas{
