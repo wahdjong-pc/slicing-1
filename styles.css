@@ -1464,6 +1464,134 @@ body{
     -o-transform: scale(1.02);
 }
 /* SECTION SUBSCRIPTION END */
+
+/* SECTION FEATURED BLOG START */
+.section__featured-blog{
+    margin-top: 90px;
+}
+
+.featured-blog__content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__featured-blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.header__featured-blog h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.blog__post-wrapper{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.post__item-1,
+.post__item-2,
+.post__item-3{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.post__item-1 .image__post,
+.post__item-2 .image__post,
+.post__item-3 .image__post{
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.image__post{
+    height: 270px;
+    position: relative;
+}
+
+.post__item-1 .image__post{
+    background-image: url('img/fashion-blog-post-2.jpg');
+}
+.post__item-2 .image__post{
+    background-image: url('img/fashion-blog-post-1.jpg');
+}
+.post__item-3 .image__post{
+    background-image: url('img/fashion-blog-post-3.jpg');
+}
+
+.post__item-1 .image__post,
+.post__item-2 .image__post,
+.post__item-3 .image__post{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image__post a{
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    border: 1px solid var(--color9);
+    background-color: var(--color1);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    align-items: center;
+    box-shadow: 1.5px 3.8px 0px -1px var(--color9);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+.image__post i{
+    font-size: 23px;
+    color: var(--color9);
+}
+
+.image__post a:hover{
+    background-color: var(--color2);
+}
+
+.hover__post:hover{
+    box-shadow: 8px 8px 0px -2px var(--color9);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.caption__post{
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    color: var(--color9);
+
+}
+.caption__post span{
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+/* SECTION FEATURED BLOG END */
 @media screen and (max-width: 961px) {
   .navbar__lists, .navbar__ctas{
     display: none;
