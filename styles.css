@@ -38,7 +38,7 @@ body{
 /* NAVBAR SECTION START */
 .navbars, .navbar__wrapper{
     background-color: var(--color2);
-    z-index: 1;
+    z-index: 3;
 }
 
 .navbars{
@@ -999,7 +999,7 @@ body{
 
 /* SECTION ESSENTIALS START */
 .section__essentials{
-    margin-top: 90px;
+    margin-top: 120px;
 }
 .header__essentials{
     width: 100%;
@@ -1263,8 +1263,97 @@ body{
     -o-transform: translateX(20px);
 }
 
-
 /* SECTION ESSENTIALS END */
+
+/* SECTION TESTIMONIALS START */
+.section__testimonials{
+    margin-top: 120px;
+}
+
+.header__testimonials{
+    width: 100%;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.header__testimonials span{
+    font-size: 2.1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.testimonials__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.testimonial__item-1,
+.testimonial__item-2,
+.testimonial__item-3{
+    position: relative;
+    border-radius: 1em;
+    padding: 50px 35px;
+    background-color: var(--color5);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.testimonial__item-1{
+    flex: 1;
+}
+.testimonial__item-2{
+    flex: 1;
+}
+.testimonial__item-3{
+    flex: 1;
+}
+
+.rating__star{
+    top: -15px;
+    right: 0;
+    width: 130px;
+    position: absolute;
+}
+
+.testimonial__data{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    color: var(--color9);
+}
+.testimonial__data span{
+    line-height: 1.5em;
+    font-size: 0.9rem;
+}
+
+.testimonial__user{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.testimonial__info{
+ display: flex;
+ flex-direction: column;
+ gap: .3em;
+ text-transform: capitalize;
+}
+.testimonial__info h2{
+    font-weight: 500;
+}
+.testimonial__user img{
+    width: 60px;
+}
+
+.hover-testimonial:hover{
+    outline: 1px solid var(--color9);
+    box-shadow: 8px 8px 0px -2px var(--color9);
+    transition: outline .2s ease-in-out;
+    -webkit-transition: outline .2s ease-in-out;
+    -moz-transition: outline .2s ease-in-out;
+    -ms-transition: outline .2s ease-in-out;
+    -o-transition: outline .2s ease-in-out;
+}
+/* SECTION TESTIMONIALS END */
 @media screen and (max-width: 961px) {
   .navbar__lists, .navbar__ctas{
     display: none;
