@@ -1577,7 +1577,6 @@ body{
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
-
 .caption__post{
     font-size: .9em;
     display: flex;
