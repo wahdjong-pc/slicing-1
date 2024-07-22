@@ -370,9 +370,6 @@ body{
     font-weight: 500;
 }
 
-
-
-
 .header__col-5{
     flex: 1;
     background-color: var(--color7);
@@ -437,14 +434,12 @@ body{
     -o-border-radius: 1em;
 }
 
-/* SECTION BEST SELLER START*/
+/* SECTION BEST SELLER START */
 .section__best-seller{
     margin-top: 90px;
 }
 
 .best__seller-wrapper{
-
-    /* background-color: #CCA3FF; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -511,7 +506,7 @@ body{
 
 .header__card-best-seller{
     /* background-color: #CCA3FF; */
-    height: 713px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
     gap: 1em;
@@ -953,7 +948,6 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-
 }
 .day__data{
     display: flex;
@@ -1611,10 +1605,10 @@ footer{
 }
 .circle__overlay{
     position: absolute;
-    top: 0;
+    top: -6%;
     left: 50%;
-    width: 320px;
-    height: 335px;
+    width: 400px;
+    height: 400px;
     background-color: var(--color14);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1699,11 +1693,133 @@ footer{
     text-decoration: underline;
 }
 /* SECTION FOOTER END */
-@media screen and (max-width: 961px) {
-  .navbar__lists, .navbar__ctas{
-    display: none;
-  }
-  .navbar__toggle-menu{
-    display: inline-block;
-  }
+@media screen and (max-width: 576px){
+    .navbar__lists, .navbar__ctas{
+        display: none;
+      }
+      .navbar__toggle-menu{
+        display: inline;
+      }
+
+      .headers{
+        height: 1000px;
+        margin-top: 400px;
+    }
+      .header__container-hero{
+        flex-direction: column;
+    }
+
+    .header__best-seller{
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .header__card-best-seller{
+        flex-direction: column;
+        height: 190vh;
+    }
+    
+    .fashion__categories-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .category{
+        width: 50%;
+    }
+
+    .cta__group{
+        width: 100%;
+    }
+    .cta__previous{
+        flex: 1;
+    }
+    .cta__next{
+        flex: 1;
+    }
+   
+    .cta-bs-wrapped{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .cta__add-to-cart{
+        width: 40%;
+    }
+    .cta__container-select{
+        width: 40%;
+    }
+    
+    .discount__winter-container{
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .subscription__content{
+        width: 100%;
+    }
+
+
+    .testimonials__container{
+        flex-direction: column;
+    }
+    .blog__post-wrapper{
+        flex-direction: column;
+    }
+
+    .footer__top{
+        flex-direction: column;
+    }
+
+    footer{
+        margin-top: 900px;
+    }
+
+    
+    .cta__shop-now{
+        width: 100%;
+    }
+    .day__data span{
+        font-size: 1.2rem;
+    }
+    .day__data p{
+        font-size: 1rem;
+    }
+    .footer__bottom span{
+        font-size: .8rem;
+    }
+
+    .bubble-user{
+        flex-wrap: wrap;
+    }
+    .header__col-4{
+       flex-wrap: wrap;
+       gap: 2em;
+    }
+    .box__essentials-container{
+        background-position: 90%;
+    }
+   
+    .icon-1,
+.icon-2,
+.icon-3,
+.icon-4,
+.icon-5,
+.icon-6{
+    visibility: hidden;
 }
+.icon-2::after{
+    width: 0;
+}
+
+
+}
+
+@media screen and (min-width: 992px) {
+  
+  
+}
+
+
+
+  
