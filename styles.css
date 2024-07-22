@@ -13,6 +13,7 @@
     --color11: #EBCBBE;
     --coloe12: #FFFFFF;
     --color13: #F0E5E1;
+    --color14: #CDE874;
 }
 
 *{
@@ -1591,6 +1592,113 @@ body{
 }
 
 /* SECTION FEATURED BLOG END */
+
+/* SECTION FOOTER START */
+footer{
+    margin-top: 90px;
+}
+
+.footer__top{
+    display: flex;
+    gap: 1em;
+}
+
+.footer__card-left{
+    flex: 1.2;
+    overflow: hidden;
+    background-color: var(--color7);
+    position: relative;
+}
+.circle__overlay{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 320px;
+    height: 335px;
+    background-color: var(--color14);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.item__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 40px 35px;
+}
+.item__footer h2, .footer__card-right h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.link{
+    text-decoration: underline;
+}
+.link a{
+    color: var(--color9);
+}
+.footer__card-middle, .footer__card-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__card-middle{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .8em;
+    background-color: var(--color4);
+    padding: 40px 35px;
+    line-height: 1.36em;
+    color: var(--color9);
+}
+.footer__card-middle img{
+    width: 240px;
+}
+.footer__card-right{
+    flex: 1.5;
+    background-color: var(--color2);
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer__card-left, .footer__card-middle, .footer__card-right{
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.footer__card-right img{
+    width: 87%;
+}
+
+.footer__bottom{
+    background-color: var(--color2);
+    height: 85px;
+    margin-top: 35px;
+}
+
+.footer__bottom span{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--color13);
+}
+.footer__bottom a{
+    padding-left: 4px;
+    color: var(--color13);
+    text-decoration: underline;
+}
+/* SECTION FOOTER END */
 @media screen and (max-width: 961px) {
   .navbar__lists, .navbar__ctas{
     display: none;
