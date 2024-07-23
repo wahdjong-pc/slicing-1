@@ -1057,17 +1057,25 @@ body{
     cursor: progress;
     font-weight: 600;
     color: var(--color9);
+    background-image: url('img/icon-plus.svg');
+    background-position: center;
+    background-size: 36%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
 }
 
+
 .icon-1{
-    top: 7%;
-    right: 37.9%;
+    top: 5%;
+    right: 36%;
+    
 }
 .icon-1::before{
     content: "Lorem ipsum dolor sit amet. - 1 ";
     position: absolute;
-    top: -10px;
-    left: -320px;
+    top: 3px;
+    left: -300px;
     padding: 12px;
     text-align: center;
     border-radius: 1em;
@@ -1095,15 +1103,15 @@ body{
 
 .icon-2{
     top: 10%;
-    right: 28%;
+    right: 26.5%;
     cursor: progress;
 }
 .icon-2::after{
     width: 185px;
     content: "Lorem ipsum dolor. - 2 ";
     position: absolute;
-    top: -11px;
-    left: 70px;
+    top: 5px;
+    left: 85px;
     padding: 12px;
     text-align: center;
     border-radius: 1em;
@@ -1135,8 +1143,8 @@ body{
 .icon-3::before{
     content: "Lorem ipsum dolor sit amet. - 3 ";
     position: absolute;
-    top: -10px;
-    left: -320px;
+    top: 0;
+    left: -306px;
     padding: 12px;
     text-align: center;
     border-radius: 1em;
@@ -1162,14 +1170,14 @@ body{
 }
 
 .icon-4{
-    top: 67%;
+    top: 63%;
     right: 22%;
 }
 .icon-4::before{
     content: "Lorem ipsum dolor sit amet. - 4 ";
     position: absolute;
-    top: -10px;
-    left: -320px;
+    top: 0;
+    left: -310px;
     padding: 12px;
     text-align: center;
     border-radius: 1em;
@@ -1195,14 +1203,14 @@ body{
 }
 
 .icon-5{
-    top: 73%;
-    right: 10%;
+    top: 71%;
+    right: 9%;
 }
 .icon-5::before{
     content: "Lorem ipsum dolor sit amet. - 5 ";
     position: absolute;
-    top: -10px;
-    left: -320px;
+    top: 0;
+    left: -310px;
     padding: 12px;
     text-align: center;
     border-radius: 1em;
@@ -1234,8 +1242,8 @@ body{
 .icon-6::before{
     content: "Lorem ipsum dolor sit amet. - 6 ";
     position: absolute;
-    top: -10px;
-    left: -320px;
+    top: 0;
+    left: -310px;
     padding: 12px;
     text-align: center;
     border-radius: 1em;
@@ -1797,7 +1805,8 @@ footer{
        gap: 2em;
     }
     .box__essentials-container{
-        background-position: 90%;
+        background-position: 100%;
+        background-image: url('img/fashion-essentials-2.png');
     }
    
     .icon-1,
@@ -1812,10 +1821,27 @@ footer{
     width: 0;
 }
 
+.icon-1 img{
+    background-image: u;
+}
+
+.header__featured-blog{
+    flex-direction: column;
+    gap: 1em;
+}
+
+.subscription__form{
+   flex-direction: column;
+}
+
+.subscription__form button{
+    width: 100%;
+}
+
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 768px) {
   
   
 }
