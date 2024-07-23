@@ -1601,6 +1601,8 @@ footer {
 
 .footer__top {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 1em;
 }
 
@@ -2064,5 +2066,148 @@ footer {
   .circle__overlay {
     width: 500px;
     height: 500px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .navbar__lists,
+  .navbar__ctas {
+    display: none;
+  }
+  .navbar__toggle-menu {
+    display: inline;
+  }
+
+  .headers {
+    min-height: 850px;
+  }
+  .header__container-hero {
+    flex-wrap: wrap;
+  }
+  .header__card-best-seller {
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+  }
+  .card__item-best-seller-3 {
+    flex: 0.5;
+  }
+
+  .fashion__categories-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box__essentials-container {
+    background-position: right;
+    background-image: url("img/fashion-essentials-2.png");
+  }
+
+  .icon-1 {
+    top: 0;
+    right: 3%;
+    background-image: url("img/icon-m-1.svg");
+  }
+  .icon-1::before {
+    top: 5px;
+    left: -250px;
+    max-width: 200px;
+  }
+
+  .icon-2 {
+    top: 6%;
+    right: 3%;
+    background-image: url("img/icon-m-2.svg");
+  }
+  .icon-2::after {
+    top: 5px;
+    left: -164px;
+    max-width: 150px;
+  }
+
+  .icon-3 {
+    top: 12%;
+    right: 3%;
+    background-image: url("img/icon-m-3.svg");
+  }
+  .icon-3::before {
+    top: 5px;
+    left: -254px;
+    max-width: 250px;
+  }
+
+  .icon-4 {
+    top: 18%;
+    right: 3%;
+    background-image: url("img/icon-m-4.svg");
+  }
+  .icon-4::before {
+    top: 5px;
+    left: -254px;
+    max-width: 250px;
+  }
+
+  .icon-5 {
+    top: 24%;
+    right: 3%;
+    background-image: url("img/icon-m-5.svg");
+  }
+  .icon-5::before {
+    top: 5px;
+    left: -254px;
+    max-width: 250px;
+  }
+
+  .icon-6 {
+    top: 30%;
+    right: 3%;
+    background-image: url("img/icon-m-6.svg");
+  }
+  .icon-6::before {
+    top: 5px;
+    left: -254px;
+    max-width: 250px;
+  }
+
+  .icon-1,
+  .icon-2,
+  .icon-3,
+  .icon-4,
+  .icon-5,
+  .icon-6 {
+    background-size: 100%;
+  }
+
+  .icon-1::before,
+  .icon-2::after,
+  .icon-3::before,
+  .icon-4::before,
+  .icon-5::before,
+  .icon-6::before {
+    font-size: 0.8rem;
+  }
+
+  .testimonials__container {
+    flex-wrap: wrap;
+  }
+
+  .subscription__content {
+    width: 70%;
+  }
+
+  .footer__top {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .footer__card-left,
+  .footer__card-middle,
+  .footer__card-right {
+    flex: 1 1 40%;
+  }
+
+  .footer__card-right img {
+    width: 45%;
   }
 }
